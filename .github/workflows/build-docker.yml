@@ -20,7 +20,7 @@ jobs:
 
       - name: tagging image and meta
         uses: docker/metadata-action@v5
-        id: meta
+        id: metadata
         with:
           images: ${{ env.LOGO_IMAGE }}
           tags: |
