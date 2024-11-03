@@ -8,7 +8,7 @@ env:
   REGISTRY: ghcr.io
 
 jobs:
-  build-shopping:
+  build-logoimage:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -22,7 +22,7 @@ jobs:
         uses: docker/metadata-action@v5
         id: meta
         with:
-          images: ${{ env.PRODUCT_IMAGE }}
+          images: ${{ env.LOGO_IMAGE }}
           tags: |
             ${{ github.sha }}
             latest
